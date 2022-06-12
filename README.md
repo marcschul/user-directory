@@ -83,3 +83,5 @@ Unlicensed.
   - [ ] Picture
 - [ ] Allow the user to export a CSV of the users on the current page
 - [ ] Display nicely in multiple viewports
+  - [ ] Row for tablet/desktop
+  - [ ] Column for phone
