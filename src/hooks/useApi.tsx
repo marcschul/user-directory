@@ -10,9 +10,8 @@ export default function useApi(url: string) {
       const response = await axios.get(url);
       setData(response);
       setLoading(false);
-      console.log(response);
     } catch (error) {
-      console.error(error);
+      setData(error);
     }
   }
 
