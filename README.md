@@ -4,8 +4,6 @@ Single page app for a user directory
 
 ## Setup
 
----
-
 ### Prerequisites
 
 - [nodejs](https://nodejs.org/en/)
@@ -16,8 +14,6 @@ Single page app for a user directory
 2. Run command `npm install` to install required dependencies
 
 ## Available Scripts
-
----
 
 ### `npm start`
 
@@ -56,8 +52,6 @@ runs
 
 ## Information
 
----
-
 ### External APIs
 
 [Random User - https://randomuser.me/](https://randomuser.me/)
@@ -69,8 +63,6 @@ A free, open-source API for generating random user data. Like Lorem Ipsum, but f
 Unlicensed.
 
 ## To-Do List
-
----
 
 - [ ] Display a paginated list of user (up to 10 users/page)
 - [ ] For each user, display a card with the following information
