@@ -12,8 +12,14 @@ const UsersListItem: React.FC<Props> = ({ users, loading }) => {
   return (
     <ul className="">
       {users.map((user: any, index: number) => (
-        <li key={index} className="">
-          {user.name.title}
+        <li key={index} className="border">
+          <p>First Name: {user.name.first}</p>
+          <p>Last Name: {user.name.last}</p>
+          <p>Email: {user.email}</p>
+          <p>Phone Number: {user.phone}</p>
+          <p>Age: {user.dob.age}</p>
+          <p>Gender: {user.dob.age}</p>
+          <img src={user.picture.thumbnail} />
         </li>
       ))}
     </ul>
@@ -21,3 +27,10 @@ const UsersListItem: React.FC<Props> = ({ users, loading }) => {
 };
 
 export default UsersListItem;
+// - [ ] First Name
+// - [ ] Last Name
+// - [ ] Email Address
+// - [ ] Phone Number
+// - [ ] Age
+// - [ ] Gender
+// - [ ] Picture

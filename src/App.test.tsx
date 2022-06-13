@@ -1,10 +1,8 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 
 describe('app tests', () => {
-  test('renders learn react link', () => {
+  test('render app should not crash', () => {
     render(<App />);
-    const linkElement = screen.getByText(/User Dictionary/i);
-    expect(linkElement).toBeInTheDocument();
   });
 });
