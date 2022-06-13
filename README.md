@@ -72,16 +72,14 @@ Unlicensed.
 
 ## To-Do List
 
-- [ ] Display a paginated list of user (up to 10 users/page)
-- [ ] For each user, display a card with the following information
-  - [ ] First Name
-  - [ ] Last Name
-  - [ ] Email Address
-  - [ ] Phone Number
-  - [ ] Age
-  - [ ] Gender
-  - [ ] Picture
-- [ ] Allow the user to export a CSV of the users on the current page
-- [ ] Display nicely in multiple viewports
-  - [ ] Row for tablet/desktop
-  - [ ] Column for phone
+- [x] Display a paginated list of user (up to 10 users/page)
+- [x] For each user, display a card with the following information
+  - [x] First Name
+  - [x] Last Name
+  - [x] Email Address
+  - [x] Phone Number
+  - [x] Age
+  - [x] Gender
+  - [x] Picture
+- [x] Allow the user to export a CSV of the users on the current page
+- [x] Display nicely in multiple viewports
