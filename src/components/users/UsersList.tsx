@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import UsersListItem from './UsersListItem';
+import UsersListItems from './UsersListItems';
 import Pagination from '../pagination/Pagination';
 import Csv from '../csv/Csv';
 
@@ -40,7 +40,7 @@ const UsersList = () => {
         <Pagination itemsPerPage={itemsPerPage} totalItems={totalItems} paginate={paginate} />
         <Csv currentPage={currentPage} />
       </div>
-      <UsersListItem users={users} loading={loading} />
+      <UsersListItems users={users} loading={loading} />
     </div>
   );
 };
