@@ -36,7 +36,7 @@ const UsersList = () => {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex mb-2 justify-center sm:justify-start min-w-[18em]">
         <Pagination
           itemsPerPage={itemsPerPage}
           totalItems={totalItems}

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
   currentPage: number;
@@ -23,8 +25,9 @@ const Csv: React.FC<Props> = ({ currentPage }) => {
 
   return (
     <>
-      <button onClick={getCsv} className="bg-blue-200 w-[4em] rounded-sm ml-1 sm:text-3xl mb-1">
-        csv
+      <button onClick={getCsv} className="bg-blue-200 w-[4em] rounded-sm ml-1 sm:text-lg">
+        <FontAwesomeIcon icon={faDownload} className="pr-2 text-2xl" />
+        {'csv'}
       </button>
     </>
   );

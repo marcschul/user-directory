@@ -22,19 +22,19 @@ const UsersListItems: React.FC<Props> = ({ users, loading }) => {
             className="rounded-full text-center self-center border-8 m-4 border-blue-200"
             src={user.picture.large}
           />
-          <p className="text-xl font-bold">
+          <span className="text-xl font-bold">
             {user.name.first} {user.name.last}
-          </p>
-          <p>{user.email}</p>
-          <p>
+          </span>
+          <span>{user.email}</span>
+          <span>
             <FontAwesomeIcon icon={faPhone} /> {user.phone}
-          </p>
-          <p>
+          </span>
+          <span>
             <FontAwesomeIcon icon={faCakeCandles} /> {user.dob.age}
-          </p>
-          <p>
+          </span>
+          <span>
             <FontAwesomeIcon icon={faMarsAndVenus} /> {user.gender}
-          </p>
+          </span>
         </li>
       ))}
     </ul>
