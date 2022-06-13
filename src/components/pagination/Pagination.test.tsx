@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Pagination from './Pagination';
 
 describe('Pagination tests', () => {
-  test('should renders Pagination', () => {
+  test('should render Pagination', () => {
     const itemsPerPage = 10;
     const totalItems = 100;
     const currentPage = 1;
@@ -18,7 +18,7 @@ describe('Pagination tests', () => {
         currentPage={currentPage}
       />
     );
-    const linkElement = screen.getByText(/ul/i);
+    const linkElement = screen.getByText(/2/i);
     expect(linkElement).toBeInTheDocument();
   });
 });
