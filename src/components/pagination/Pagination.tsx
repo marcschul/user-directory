@@ -4,7 +4,7 @@ interface Props {
   itemsPerPage: number;
   totalItems: number;
   paginate: any;
-  currentPage: any;
+  currentPage: number;
 }
 
 const Pagination: React.FC<Props> = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
