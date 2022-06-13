@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faCakeCandles, faMarsAndVenus } from '@fortawesome/free-solid-svg-icons';
+
 interface Props {
   users: any;
   loading: any;
@@ -19,13 +22,19 @@ const UsersListItem: React.FC<Props> = ({ users, loading }) => {
             className="rounded-full text-center self-center border-8 m-4"
             src={user.picture.large}
           />
-          <p>
+          <p className="text-xl font-bold">
             {user.name.first} {user.name.last}
           </p>
           <p>{user.email}</p>
-          <p>#: {user.phone}</p>
-          <p>Age: {user.dob.age}</p>
-          <p>Gender: {user.dob.age}</p>
+          <p>
+            <FontAwesomeIcon icon={faPhone} /> {user.phone}
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faCakeCandles} /> {user.dob.age}
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faMarsAndVenus} /> {user.gender}
+          </p>
         </li>
       ))}
     </ul>
