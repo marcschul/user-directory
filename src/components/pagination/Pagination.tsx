@@ -4,7 +4,7 @@ interface Props {
   itemsPerPage: number;
   totalItems: number;
   paginate: any;
-  currentPage: number;
+  currentPage: any;
 }
 
 const Pagination: React.FC<Props> = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
@@ -19,10 +19,9 @@ const Pagination: React.FC<Props> = ({ itemsPerPage, totalItems, paginate, curre
     <nav className="flex">
       <ul className="flex flex-wrap bg-cyan-900 rounded-sm text-slate-200 sm:text-3xl sm:ml-2">
         {pageNumbers.map((number) => (
-          <li key={number} className="text-1xl m-1 p-1">
+          <li key={number} className="text-1xl m-1 p-1 hover:cursor-pointer">
             <a
               onClick={() => paginate(number)}
-              href="!#"
               className={number === currentPage ? 'underline' : ''}>
               {number}
             </a>
