@@ -62,6 +62,14 @@ A free, open-source API for generating random user data. Like Lorem Ipsum, but f
 
 Unlicensed.
 
+### Desktop View
+
+!["Screenshot of Home Page page"](https://github.com/marcschul/user-directory/blob/main/docs/user-dictionary-desktop-sm.png?raw=true)
+
+### Mobile View
+
+!["Screenshot of Home Page page"](https://github.com/marcschul/user-directory/blob/main/docs/user-dictionary-mobile-sm.png?raw=true)
+
 ## To-Do List
 
 - [ ] Display a paginated list of user (up to 10 users/page)
