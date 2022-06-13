@@ -37,7 +37,12 @@ const UsersList = () => {
   return (
     <div>
       <div className="flex">
-        <Pagination itemsPerPage={itemsPerPage} totalItems={totalItems} paginate={paginate} />
+        <Pagination
+          itemsPerPage={itemsPerPage}
+          totalItems={totalItems}
+          paginate={paginate}
+          currentPage={currentPage}
+        />
         <Csv currentPage={currentPage} />
       </div>
       <UsersListItems users={users} loading={loading} />
