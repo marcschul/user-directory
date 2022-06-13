@@ -16,7 +16,7 @@ const Pagination: React.FC<Props> = ({ itemsPerPage, totalItems, paginate }) => 
 
   return (
     <nav className="flex">
-      <ul className="flex flex-wrap bg-blue-500 rounded-sm mb-1 text-slate-200 lg:text-3xl lg:ml-2">
+      <ul className="flex flex-wrap bg-cyan-900 rounded-sm mb-1 text-slate-200 sm:text-3xl sm:ml-2">
         {pageNumbers.map((number) => (
           <li key={number} className="text-1xl m-1 p-1">
             <a onClick={() => paginate(number)} href="!#" className="">

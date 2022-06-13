@@ -23,7 +23,7 @@ const Csv: React.FC<Props> = ({ currentPage }) => {
 
   return (
     <>
-      <button onClick={getCsv} className="bg-blue-200 w-[4em] rounded-sm ml-1 lg:text-3xl mb-1">
+      <button onClick={getCsv} className="bg-blue-200 w-[4em] rounded-sm ml-1 sm:text-3xl mb-1">
         csv
       </button>
     </>
