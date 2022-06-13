@@ -5,10 +5,9 @@ import Pagination from '../pagination/Pagination';
 import Csv from '../csv/Csv';
 
 const UsersList = () => {
+  const [loading, setLoading] = useState(false);
   const [users, setUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  // const [usersPerPage, setUsersPerPage] = useState(10);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function getData() {
@@ -32,10 +31,15 @@ const UsersList = () => {
     setCurrentPage(pageNumber);
   };
 
+  const itemsPerPage = 10;
+  let totalItems = 100;
+
   return (
     <div>
-      <Pagination itemsPerPage="10" totalItems="100" paginate={paginate} />
-      <Csv currentPage={currentPage} />
+      <div className="flex">
+        <Pagination itemsPerPage={itemsPerPage} totalItems={totalItems} paginate={paginate} />
+        <Csv currentPage={currentPage} />
+      </div>
       <UsersListItem users={users} loading={loading} />
     </div>
   );

@@ -3,10 +3,10 @@ import UsersList from './components/users/UsersList';
 
 function App() {
   return (
-    <>
+    <div className="m-2">
       <Header />
       <UsersList />
-    </>
+    </div>
   );
 }
 

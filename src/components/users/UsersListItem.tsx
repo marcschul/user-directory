@@ -10,16 +10,22 @@ const UsersListItem: React.FC<Props> = ({ users, loading }) => {
   }
 
   return (
-    <ul className="">
+    <ul className="flex flex-col lg:flex-row lg:flex-wrap">
       {users.map((user: any, index: number) => (
-        <li key={index} className="border">
-          <p>First Name: {user.name.first}</p>
-          <p>Last Name: {user.name.last}</p>
-          <p>Email: {user.email}</p>
-          <p>Phone Number: {user.phone}</p>
+        <li
+          key={index}
+          className="flex flex-col border text-center flex-col p-2 mb-1 lg:m-2 mt-1 rounded-xl justify-center break-words lg:max-w-[18em] lg: min-w-[18em]">
+          <img
+            className="rounded-full text-center self-center border-8 m-4"
+            src={user.picture.large}
+          />
+          <p>
+            {user.name.first} {user.name.last}
+          </p>
+          <p>{user.email}</p>
+          <p>#: {user.phone}</p>
           <p>Age: {user.dob.age}</p>
           <p>Gender: {user.dob.age}</p>
-          <img src={user.picture.thumbnail} />
         </li>
       ))}
     </ul>
@@ -27,10 +33,3 @@ const UsersListItem: React.FC<Props> = ({ users, loading }) => {
 };
 
 export default UsersListItem;
-// - [ ] First Name
-// - [ ] Last Name
-// - [ ] Email Address
-// - [ ] Phone Number
-// - [ ] Age
-// - [ ] Gender
-// - [ ] Picture
